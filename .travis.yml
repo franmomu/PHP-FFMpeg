@@ -38,7 +38,7 @@ matrix:
 
 before_install:
   - sudo add-apt-repository ppa:mc3man/${TRAVIS_DIST}-media -y
-  - sudo apt-get update -q
+  - sudo apt-get update --option Acquire::Retries=100 --option Acquire::http::Timeout="60"
   - composer self-update
   - echo "$PHPUNIT_VERSION"
   - |
