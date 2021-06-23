@@ -2,6 +2,11 @@ language: php
 
 dist: trusty
 
+addons:
+  apt:
+    config:
+      retries: true
+
 branches:
   only:
     - master
