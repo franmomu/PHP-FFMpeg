@@ -6,6 +6,7 @@ branches:
   only:
     - master
     - v1.x
+    - another_test
 
 cache:
   directories:
